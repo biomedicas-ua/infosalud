@@ -1,0 +1,111 @@
+
+/* Estilos generales (para portátiles y pantallas grandes) */
+section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan en caso de que no quepan */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+article, aside {
+    flex: 1 1 calc(45% - 20px); /* Dos columnas, ajustando el tamaño */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    background: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilo de la tabla */
+table, tr, td, th {
+    border: 1px solid #653299;
+    border-collapse: collapse; /* Asegura que las celdas de la tabla estén unidas */
+}
+
+th, td {
+    padding: 10px; /* Espacio dentro de las celdas */
+}
+
+th {
+    background-color: #e3e3e3; /* Color de fondo para los encabezados */
+}
+
+#imagen_bebep {
+    width: 300px;
+}
+
+h3 {
+    color: #285151;
+    background-color: #E4E4E4;
+}
+
+/* ---- Media Queries ---- */
+
+/* Pantallas pequeñas (móviles, anchura máxima 480px) */
+@media (max-width: 480px) {
+    section {
+        flex-direction: column; /* Coloca los artículos uno debajo del otro */
+        gap: 10px; /* Reduce el espacio entre los elementos */
+    }
+
+    article, aside {
+        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
+        margin-bottom: 10px;
+    }
+
+    #imagen_bebep {
+        width: 100%; /* Ajusta la imagen al ancho del dispositivo */
+    }
+
+    table {
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    }
+
+    th, td {
+        font-size: 14px; /* Reduce el tamaño de la fuente dentro de las celdas */
+    }
+}
+
+/* Pantallas medianas (tablets, 481px - 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    section {
+        flex-direction: row; /* Mantén las columnas en fila, pero ajustadas al tamaño de la pantalla */
+        gap: 15px; /* Ajuste del espacio */
+    }
+
+    article, aside {
+        flex: 1 1 calc(50% - 15px); /* Ajusta el ancho de las columnas al 50% */
+    }
+
+    #imagen_bebep {
+        width: 200px; /* Reduce el tamaño de la imagen */
+    }
+
+    table {
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    }
+
+    th, td {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+    section {
+        gap: 30px; /* Espacio más amplio entre las columnas */
+    }
+
+    article, aside {
+        flex: 1 1 calc(30% - 30px); /* Tres columnas, ajustando el tamaño */
+    }
+
+    #imagen_bebep {
+        width: 400px; /* Tamaño mayor de la imagen */
+    }
+
+    table {
+        width: 80%; /* Asegura que la tabla ocupe el 80% del ancho disponible */
+    }
+
+    th, td {
+        font-size: 18px; /* Tamaño de fuente mayor en pantallas grandes */
+    }
+}

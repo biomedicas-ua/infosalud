@@ -1,0 +1,348 @@
+PREDETERMINADO
+
+header {
+    color: black;
+    display: flex;
+    align-items: center;
+	font-size: 30px;
+	background-color:#F2F2F2;
+}
+
+header img {
+    width: 300px;
+    margin-right: 80px;
+}
+
+
+#salto {
+	float:right;
+}
+
+
+
+
+
+
+html, body {
+  margin: 5px;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima igual a la altura de la ventana */
+
+}
+
+
+
+
+footer {
+	margin-top: auto; /* Hace que el footer se mantenga al fondo si no hay suficiente contenido */
+	background-color: #F2F2F2; /* Color de fondo suave */
+	padding: 40px;
+	display: flex;
+	font-family: Arial, sans-serif;
+	border-top: 2px solid #ccc; /* Línea superior para separarlo del resto de la página */
+	
+}
+
+footer h4 {
+	margin-bottom: 10px;
+	color: #333; /* Color del texto de los títulos */
+	font-weight: bold;
+}
+
+footer ol {
+	list-style-type: decimal;
+	margin-bottom: 10px;
+}
+
+footer ol li {
+
+	margin-right: 40px;
+	font-style: italic;
+	color: #555;
+}
+
+
+footer address {
+	margin-left: 50px;
+	margin-bottom: 10px;
+	font-style: normal;
+}
+
+footer address a {
+	color: #1612FF; /* Color de los enlaces */
+
+}
+
+
+footer img {
+	margin-left: 80px;
+	width: 250px; /* Tamaño de la imagen del copyright */
+	height: 100px;
+}
+
+#enlaces {
+	margin-top: 10px;
+	margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ARTICULOS
+
+/* Estructura de columnas */
+	section {
+		display: flex;
+        flex-wrap: wrap; /* Permite que los artículos se envuelvan en caso de que no quepan */
+        gap: 20px; /* Espacio entre columnas */
+    }
+	
+	
+    article, aside {
+        flex: 1 1 calc(45% - 20px); /* Dos columnas, ajustando el tamaño */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 15px;
+        background: #f9f9f9; /* Color de fondo */
+    }
+
+    /* Estilo de la tabla */
+    table, tr, td, th {
+        border: 1px solid #653299;
+        border-collapse: collapse; /* Asegura que las celdas de la tabla estén unidas */
+    }
+
+    th, td {
+        padding: 10px; /* Espacio dentro de las celdas */
+    }
+
+    th {
+        background-color: #e3e3e3; /* Color de fondo para los encabezados */
+    }
+
+
+#imagen_bebep {
+	width: 300px;
+}
+
+
+h3 {
+	color: #285151;
+	background-color: #E4E4E4
+}
+
+
+
+
+
+
+
+
+
+FORMULARIOS
+
+#salto {
+	float:right;
+}
+
+
+form {
+    margin: 20px;
+    padding: 20px;
+	width: 450px; /* Ancho del formulario */
+	border: 2px solid #408080;
+
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    background-color: #f9f9f9; /* Fondo claro */
+    position: relative; /* Posicionamiento relativo para el legend */
+	max-width: 400px;
+}
+
+
+legend {font-weight: bold;}
+
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="radio"],textarea, select {
+    width: 300px; /* Ajustar el ancho para incluir padding y borde */
+    padding: 10px; /* Espaciado interior en los campos */
+    border: 1px solid #ccc; /* Bordes ligeros */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+
+}
+
+input[type="number"], input[type="tel"], input[type="range"], input[type="color"] {
+    width: 300px; /* Ajustar el ancho para incluir padding y borde */
+    padding: 10px; /* Espaciado interior en los campos */
+    border: 1px solid #ccc; /* Bordes ligeros */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+
+input[type="text"]:focus {
+    outline: none;
+     background-color: #DEEFEF; /* Cambia el borde a azul al recibir el foco */
+}
+
+/* Botones */
+input[type="submit"], input[type="reset"] {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #408080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #2C5656;
+}
+
+
+/* ICONOS */
+.material-symbols-outlined {
+  font-size: 36px; /* Cambia el tamaño */
+  color: #408080; /* Cambia el color */
+  margin-left:5px;
+  margin-right:5px;
+}
+
+
+
+
+
+
+
+
+
+INDEX
+
+/* Imagen con texto alternativo nulo flotando a la derecha */
+img[alt=""] {
+    float: right;
+    margin-right: 150px;
+	margin-top: -150px; /* Reducir el espacio entre la imagen y el párrafo de arriba */
+    max-width: 50%; /* La imagen ocupará un máximo del 40% del contenedor */
+}
+
+/* INDICE ALFABÉTICO */
+#menuhorizontal {
+  margin:0;
+  padding:0;
+  list-style-type:none; 
+}
+#menuhorizontal a {
+  width: 28px;
+  text-decoration:none;
+  text-align:center;
+  color:#000000;
+  background-color:#E2F5FE;
+  padding:10px 15px;
+
+  display:block;
+}
+
+#menuhorizontal li {
+  float:left;
+  margin-right: 0px;
+}
+
+#menuhorizontal a:hover {
+  background-color:#A5DFFC;
+}
+
+
+
+/* COLUMNAS */
+.columnas {
+    display: flex; /* Establece un contenedor flex */
+}
+
+.mapa {
+    flex: 1; /* Ocupa una parte igual del espacio */
+    margin-right: 50px; /* Espacio entre las columnas */
+	margin-top: 30px;
+}
+
+.temas-destacados {
+    flex: 1; /* Ocupa una parte igual del espacio */
+	margin-right: 10px; /* Espacio entre las columnas */
+	margin-left: 320px; 
+	background-color: #F2F2F2;
+	padding: 50px;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+.p {
+	width: 400px;
+}
+
+/* IMAGENES */
+.imagen {
+	width: 400px;
+}
+
+
+
+
+
+
+LETRAS
+
+.galeria {
+	display: flex;
+}
+
+/* IMAGENES */
+.imagen {
+	width: 300px;
+	height: 230px;          /* Alto fijo para mantener la uniformidad */
+    object-fit: cover;      /* Cubre el espacio del contenedor sin deformar */
+}
+
+
+#enfermedades {
+	list-style-type:none; 
+	display: flex;
+	margin-left: 90px;
+}
+
+#enfermedades li {
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+	margin-right: 300px;
+}
+
+
+
+
+
+
+
+
+

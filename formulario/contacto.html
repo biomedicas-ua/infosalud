@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ENCICLOPEDIA DE SALUD</title>
+<link href="../estilos/estilo_predeterminado.css" rel="stylesheet">
+<link href="../estilos/estilo_form.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../imagen/logo.jpeg" alt="logo"></a>
+		
+		<h1>ENCICLOPEDIA DE SALUD</h1> 
+	</header> 
+	
+	<main>
+	<p>Estás en: <a href="../index.html">Página principal </a> > <a href="contacto.html">Formulario de contacto</a></p>
+	<h2><u>DATOS DE CONTACTO</u></h2>
+	<p>Formulario para ingresar sus datos de contacto</p>
+	<p>Los campos con símbolo de advertencia son obligatorios</p>
+	<form action="pagina_recibida.html" method="get">
+	
+	<label for="asunto"><span class="material-symbols-outlined icono">edit</span>Asunto &#9888: <input type="text" id="asunto" title="Texto breve" placeholder="Introduzca asunto" required /></label>
+	<br><br>
+	
+	<label for="comentario"><span class="material-symbols-outlined icono">edit_square</span>Comentario o pregunta &#9888:</label>
+	<textarea id="comentario" title="texto largo" required></textarea>
+	<br><br>
+	
+	<label for="profesión"><span class="material-symbols-outlined icono">person</span>Yo soy:</label>
+	<select title="seleccione una opción" id="profesión">
+	<option value="Paciente">Paciente</option>
+	<option value="Científico">Científico</option>
+	<option value="Médico">Médico</option>
+	<option value="Educador">Educador</option>
+	<option value="Fabricante">Fabricante</option>
+	<option value="Periodista">Periodista</option>
+	</select>
+	<br><br>
+	
+	<label for="fecha"><span class="material-symbols-outlined icono">calendar_month</span>Fecha nacimiento <input type="date" title="seleccione una fecha, ej. 17/05/2002" id="fecha"/></label>
+	<br><br>
+	
+	<fieldset title="seleccione una opcion">
+		<legend><span class="material-symbols-outlined icono">wc</span>Sexo:</legend>
+		<label for="Hombre">Hombre</label>
+		<input type="radio" name="sexo" id="Hombre" value="Hombre"/>
+		<label for="Mujer">Mujer</label>
+		<input type="radio" name="sexo" id="Mujer"  value="Mujer"/>
+		<label for="otro">Otro</label>
+		<input type="radio" name="sexo" id="otro"  value="otro"/>
+	</fieldset>
+	<br><br>
+	
+	<label for="email"><span class="material-symbols-outlined icono">mail</span>Email <input type="email" placeholder="introduzca email" title="formato email: ejemplo@gmail.com" id="email"></label>
+	<br><br>
+	
+	<fieldset> <legend>Deseo recibir más información:</legend> 
+	<input type="checkbox" id="verificacion" title="casilla opcional" name="verificacion" value="verificacion" /> 
+	<label for="verificacion">Acepto</label><br>
+	</fieldset>
+	<br><br>
+
+	<input type="submit" value="Enviar datos"/>
+	</form>
+	</main>
+
+	<footer>
+	<section>
+		<h4>Autores:</h4>
+		<ol>
+		<li>Elena García</li>
+		<li>Cristina Andrés</li>
+		</ol>
+	</section>
+		
+		<address>
+		<p>Para más información puedes contactarnos en: </p>
+		Correo electrónico Elena: <a href="mailto:egv39@alu.ua.es">egv39@alu.ua.es</a><br>
+		Correo electrónico Cristina: <a href="mailto:cac99@alu.ua.es">cac99@alu.ua.es</a>
+		</address>
+		
+		
+		<img src="../imagen/copy.jpeg" alt="copyright">
+		
+		<section id="enlaces">
+		<p>Grado de Ingenieria Biomédica en la Universidad de Alicante</p>
+		<a href="../mapa_web.html">Mapa del sitio web</a>
+		</section>
+		
+	</footer>
+</body>
+</html>

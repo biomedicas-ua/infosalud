@@ -1,0 +1,134 @@
+/* Estilos generales */
+#salto {
+	float:right;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+	width: 450px; /* Ancho del formulario */
+	border: 2px solid #408080;
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    background-color: #f9f9f9; /* Fondo claro */
+    position: relative; /* Posicionamiento relativo para el legend */
+	max-width: 400px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="radio"], textarea, select {
+    width: 300px; /* Ajustar el ancho para incluir padding y borde */
+    padding: 10px; /* Espaciado interior en los campos */
+    border: 1px solid #ccc; /* Bordes ligeros */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+input[type="number"], input[type="tel"], input[type="range"], input[type="color"] {
+    width: 300px; /* Ajustar el ancho para incluir padding y borde */
+    padding: 10px; /* Espaciado interior en los campos */
+    border: 1px solid #ccc; /* Bordes ligeros */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background-color: #DEEFEF; /* Cambia el borde a azul al recibir el foco */
+}
+
+/* Botones */
+input[type="submit"], input[type="reset"] {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #408080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #2C5656;
+}
+
+/* ICONOS */
+.material-symbols-outlined {
+  font-size: 36px; /* Cambia el tamaño */
+  color: #408080; /* Cambia el color */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Breakpoints para diferentes tamaños de pantalla */
+
+/* Móviles (ancho máximo de 480px) */
+@media only screen and (max-width: 480px) {
+    form {
+        width: 50%; /* El formulario toma el ancho completo */
+        padding: 10px;
+    }
+    
+    fieldset {
+        max-width: 100%;
+    }
+    
+    label, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"], select {
+        width: 100%; /* Ancho completo para campos de formulario */
+    }
+    
+    .material-symbols-outlined {
+        font-size: 24px; /* Tamaño más pequeño para iconos */
+    }
+}
+
+/* Tablets (ancho entre 481px y 1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    form {
+        width: 50%; /* Ajustar ancho del formulario en tablets */
+        padding: 15px;
+    }
+    
+    fieldset {
+        max-width: 80%;
+    }
+    
+    label, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"], select {
+        width: 80%; /* Ajustar ancho de los campos */
+    }
+    
+    .material-symbols-outlined {
+        font-size: 30px; /* Ajustar tamaño de iconos */
+    }
+}
+
+/* Pantallas grandes (ancho mayor a 1024px) */
+@media only screen and (min-width: 1025px) {
+    form {
+        width: 450px; /* El ancho original */
+    }
+    
+    fieldset {
+        max-width: 400px;
+    }
+    
+    label, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"], select {
+        width: 300px; /* Mantener el ancho original */
+    }
+    
+    .material-symbols-outlined {
+        font-size: 36px; /* Tamaño original de iconos */
+    }
+}

@@ -1,0 +1,92 @@
+
+.galeria {
+	display: flex;
+	flex-wrap: wrap; /* Permite que las imágenes se ajusten a la pantalla */
+	gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* IMAGENES */
+.imagen {
+	width: 300px;
+	height: 230px;          /* Alto fijo para mantener la uniformidad */
+	object-fit: cover;      /* Cubre el espacio del contenedor sin deformar */
+}
+
+/* Lista de enfermedades */
+#enfermedades {
+	list-style-type:none; 
+	display: flex;
+	flex-wrap: wrap; /* Asegura que los elementos se envuelvan si no caben en la línea */
+	margin-left: 90px;
+}
+
+#enfermedades li {
+	margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+	margin-right: 300px;
+}
+
+/* ---- Media Queries ---- */
+
+/* Pantallas pequeñas (móviles, anchura máxima 480px) */
+@media (max-width: 480px) {
+	.galeria {
+		flex-direction: column; /* Coloca las imágenes en una sola columna */
+		gap: 10px; /* Reduce el espacio entre las imágenes */
+	}
+
+	.imagen {
+		width: 100%; /* La imagen ocupará todo el ancho disponible */
+		height: auto; /* Ajusta la altura para mantener la relación de aspecto */
+	}
+
+	#enfermedades {
+		margin-left: 20px; /* Reduce el margen izquierdo */
+		flex-direction: column; /* Coloca los elementos de la lista uno debajo del otro */
+	}
+
+	#enfermedades li {
+		margin-right: 0; /* Elimina el margen derecho para pantallas pequeñas */
+	}
+}
+
+/* Pantallas medianas (tablets, 481px - 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+	.galeria {
+		gap: 15px; /* Ajuste del espacio entre imágenes */
+	}
+
+	.imagen {
+		width: 250px; /* Reduce el tamaño de la imagen */
+		height: 200px; /* Ajusta la altura para mantener la relación de aspecto */
+	}
+
+	#enfermedades {
+		margin-left: 50px; /* Ajusta el margen izquierdo */
+	}
+
+	#enfermedades li {
+		margin-right: 100px; /* Reduce el espacio entre los elementos de la lista */
+	}
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+	.galeria {
+		gap: 30px; /* Mayor espacio entre las imágenes */
+	}
+
+	.imagen {
+		width: 350px; /* Tamaño mayor de las imágenes */
+		height: 250px; /* Aumenta la altura */
+	}
+
+	#enfermedades {
+		margin-left: 120px; /* Mayor margen izquierdo */
+	}
+
+	#enfermedades li {
+		margin-right: 350px; /* Mayor espacio entre los elementos de la lista */
+	}
+}
+
+
