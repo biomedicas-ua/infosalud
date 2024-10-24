@@ -1,0 +1,161 @@
+@media print {
+
+     footer address, #enlaces ,nav, #menuhorizontal, .no-print {
+        display: none; /* No imprime elementos que no sean parte del contenido principal */
+    }
+
+    
+    footer img  {
+        display: block; /* Muestra solo la imagen */
+        filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+        max-width: 100%; /* Ajusta la imagen al ancho disponible */
+        height: auto; /* Mantiene la proporción */
+    
+    }
+
+    article img, img[alt=""]{
+        display: none;
+    }
+
+
+
+    footer, footer h4, footer ol, footer ol li {
+        margin: 0; /* Sin márgenes en el footer */
+        padding: 0; /* Sin rellenos en el footer */
+        page-break-after: avoid; /* Evita salto de página después del footer */
+    }
+
+
+    header img {
+        filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+        display: block; /* Asegura que la imagen se muestre en la impresión */
+        max-width: 100%; /* Ajusta la imagen al ancho disponible */
+        height: auto; /* Mantiene la proporción */
+        width: 7cm;
+    }
+    
+    h1 {
+        margin: 0.5cm;
+        font-size: 20pt;
+    }
+
+
+
+
+    /* Ajustar el cuerpo y márgenes para A4 */
+    body {
+        margin: 0;
+        padding: 1cm; /* Ajuste de los márgenes para la impresión en A4 */
+        font-size: 12pt; /* Tamaño adecuado para leer en papel */
+        font-family: serif;
+        color: #000;
+        background: #fff; /* Fondo blanco para ahorrar tinta */
+    }
+
+    a {
+        text-decoration: underline;
+        color: blue;
+        font-size: 12pt; /* Tamaño adecuado para leer en papel */
+    }
+
+
+    a::after {
+        content: " (" attr(href) ")"; /* Muestra la URL entre paréntesis después del enlace */
+        font-size: 12pt; /* Tamaño de fuente ligeramente más pequeño */
+        color: gray; /* Color gris para el URL */
+    }
+
+
+
+    /* Evitar que los artículos se dividan en varias páginas */
+    article {
+        page-break-inside: avoid;
+    }
+
+
+
+
+    /* Especificar el tamaño de la página */
+    @page {
+        size: A4; /* Tamaño de papel A4 */
+        margin: 10mm; /* Márgenes */
+    }
+
+
+    /* Evitar viudas y huérfanas */
+    h1, h2, h3, h4 {
+        orphans: 3; /* Mínimo 3 líneas de texto en la última página */
+        widows: 3; /* Mínimo 3 líneas de texto en la primera página */
+    }
+
+
+        /* Columnas */
+    .columnas {
+        display: flex; /* Establece un contenedor flex */
+        flex-direction: column; /* Cambia la dirección a columna */
+        width: 100%; /* Asegúrate de que ocupa el ancho completo */
+    }
+
+    .mapa {
+        flex: 1; /* Ocupa el espacio disponible */
+        margin: 0; /* Sin márgenes */
+        page-break-after: always; /* Salto de página después del mapa */
+        font-size: 12pt; /* Tamaño adecuado para leer en papel */
+    }
+
+    img[alt="Partes cuerpo humano"] {
+        display: block;
+        width: 50%;
+        filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+    }
+
+    .temas-destacados {
+        flex: 1; /* Ocupa el espacio disponible */
+        margin: 0; /* Sin márgenes */
+        /* Opción: página puede comenzar en la siguiente hoja */
+        font-size: 12pt; /* Tamaño adecuado para leer en papel */
+    }
+
+
+
+    
+
+
+
+
+
+
+
+    /* LETRAS */
+
+    figure img {
+        filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+        width: 6cm;
+        height: 6cm;
+    }
+
+    figure {
+        margin: 2mm;
+    }
+
+    
+
+    /* ARTÍCULO BRONQUITIS */
+
+    img[alt="bronquitis"] {
+        display: block;
+        filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+        width: 6cm;
+        height: 6cm;
+    }
+
+    #imagen_bebep {
+        display: block;
+        filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+        width: 6cm;
+        height: 3cm;
+    }
+
+
+
+}
