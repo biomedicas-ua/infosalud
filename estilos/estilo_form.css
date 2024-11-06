@@ -1,0 +1,162 @@
+
+:root {
+    --color_bordeform:#408080;
+    --color_bordef:#ccc;
+    --fondo_field: #f9f9f9;
+    --fondo_input: #DEEFEF;
+    --color_input: white;
+    --fondo_boton:#2C5656;
+}
+
+
+
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+	width: 450px; /* Ancho del formulario */
+	border: 2px solid var(--color_bordeform);
+	text-align:center;
+	display:block;
+}
+
+
+fieldset {
+    border: 1px solid var(--color_bordef); /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    background-color: var(--fondo_field); /* Fondo claro */
+    position: relative; /* Posicionamiento relativo para el legend */
+	max-width: 400px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="radio"], textarea, select {
+    width: 300px; /* Ajustar el ancho para incluir padding y borde */
+    padding: 10px; /* Espaciado interior en los campos */
+    border: 1px solid var(--color_bordef); /* Bordes ligeros */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+input[type="number"], input[type="tel"], input[type="range"], input[type="color"] {
+    width: 300px; /* Ajustar el ancho para incluir padding y borde */
+    padding: 10px; /* Espaciado interior en los campos */
+    border: 1px solid var(--color_bordef); /* Bordes ligeros */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background-color: var(--fondo_input); /* Cambia el borde a azul al recibir el foco */
+}
+
+/* Botones */
+input[type="submit"], input[type="reset"] {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: var(--color_bordeform);
+    color: var(--color_input);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: var(--fondo_boton);
+}
+
+/* ICONOS */
+.material-symbols-outlined {
+  font-size: 36px; /* Cambia el tamaño */
+  color: var(--color_bordeform); /* Cambia el color */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+/* Breakpoints para diferentes tamaños de pantalla */
+
+/* Móviles (ancho máximo de 480px) */
+@media only screen and (max-width: 480px) {
+    form {
+        width: 50%; /* El formulario toma el ancho completo */
+        padding: 10px;
+    }
+    
+    fieldset, textarea {
+        max-width: 100%;
+    }
+
+ 
+    
+    label, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"], select  {
+        width: 100%; /* Ancho completo para campos de formulario */
+    }
+
+
+    input[type="range"], input[type="color"], input[type="radio"] {
+        width: 100%;
+    }
+
+    
+    .material-symbols-outlined {
+        font-size: 24px; /* Tamaño más pequeño para iconos */
+    }
+}
+
+
+
+
+/* Tablets (ancho entre 481px y 1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    form {
+        width: 50%; /* Ajustar ancho del formulario en tablets */
+        padding: 15px;
+    }
+    
+    fieldset, textarea {
+        max-width: 80%;
+    }
+    
+    label, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"], select {
+        width: 80%; /* Ajustar ancho de los campos */
+    }
+    
+    .material-symbols-outlined {
+        font-size: 30px; /* Ajustar tamaño de iconos */
+    }
+}
+
+/* Pantallas grandes (ancho mayor a 1024px) */
+@media only screen and (min-width: 1025px) {
+    form {
+        width: 450px; /* El ancho original */
+    }
+    
+    fieldset, textarea {
+        max-width: 400px;
+    }
+    
+    label, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"], select {
+        width: 300px; /* Mantener el ancho original */
+    }
+    
+    .material-symbols-outlined {
+        font-size: 36px; /* Tamaño original de iconos */
+    }
+}
