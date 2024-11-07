@@ -1,0 +1,16 @@
+@import url("bajo_contraste.css");
+@import url("letra.css");
+
+:root {
+    --color_header: #4A4A4A; /* Blanco para el texto del encabezado */
+    --fondo_header: #D0D0D0; /* Un negro ligeramente más claro para el encabezado */
+    --borde_top: #333333; /* Gris oscuro para el borde */
+    --footer_h4: #5A5A5A; /* Blanco para los títulos del pie de página */
+    --footer_ol: #5A5A5A; /* Gris claro para las listas ordenadas */
+    --footer_address: #6E8EAF; /* Azul claro para las direcciones en el pie de página */
+  }
+  :root {
+    --color_menu: white;
+    --fondo_menu: #B0C4DE;
+    --fondo_hover: #BDBDFF;
+  }
