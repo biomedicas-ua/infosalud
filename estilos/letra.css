@@ -1,0 +1,33 @@
+@import url("estilo_predeterminado.css");
+@import url("estilo_index.css");
+@import url("estilo_letras.css");
+@import url("estilo_articuloss.css");
+@import url("estilo_form.css");
+
+body {
+    font-size: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+
+input[type="text"], input[type="date"], input[type="email"], input[type="radio"], textarea, select {
+    width: 400px auto; /* Ajustar el ancho para incluir padding y borde */   
+}
+
+input[type="number"], input[type="tel"], input[type="range"], input[type="color"] {
+    width: 400px auto; /* Ajustar el ancho para incluir padding y borde */
+}
+
+input[type="submit"], input[type="reset"]{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+  }
+
+
+img[alt="Partes cuerpo humano"] {
+    width: 120%;
+}

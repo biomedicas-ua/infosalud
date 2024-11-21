@@ -1,0 +1,191 @@
+
+:root {
+    --color_menu: #000000;
+    --fondo_menu: #E2F5FE;
+    --fondo_hover: #A5DFFC;
+    --fondo_temas:#F2F2F2;
+}
+
+/*Imagen con texto alternativo nulo flotando a la derecha */
+img[alt=""] {
+    float: right;
+    margin-right: 150px;
+	margin-top: -150px; /* Reducir el espacio entre la imagen y el párrafo de arriba */
+    max-width: 50%; /* La imagen ocupará un máximo del 50% del contenedor */
+}
+
+/* Índice alfabético */
+#menuhorizontal {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#menuhorizontal a {
+  width: 28px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color_menu);
+  background-color: var(--fondo_menu);
+  padding: 10px 15px;
+  display: block;
+}
+
+#menuhorizontal li {
+  float: left;
+  margin-right: 0px;
+}
+
+#menuhorizontal a:hover {
+  background-color: var(--fondo_hover);
+}
+
+/* Columnas */
+.columnas {
+    display: flex; /* Establece un contenedor flex */
+}
+
+.mapa {
+    flex: 1; /* Ocupa una parte igual del espacio */
+    margin-right: 50px; /* Espacio entre las columnas */
+	margin-top: 30px;
+}
+
+.temas-destacados {
+    flex: 1; /* Ocupa una parte igual del espacio */
+	margin-right: 10px; /* Espacio entre las columnas */
+	margin-left: 320px;
+	background-color: var(--fondo_temas);
+	padding: 50px;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+
+
+
+.p {
+	width: 400px;
+}
+
+/* Imágenes */
+.imagen {
+	width: 400px;
+}
+
+/* Breakpoints para diferentes tamaños de pantalla */
+
+/* Móviles (ancho máximo de 480px) */
+@media only screen and (max-width: 480px) {
+    img[alt=""] {
+        float: none;
+        margin: 10px auto;
+        max-width: 100%; /* Imagen ocupa el ancho completo */
+    }
+    
+    #menuhorizontal li {
+        float: left; /* Los elementos del menú se apilan horizontalmente */
+		
+    }
+    
+    .columnas {
+        flex-direction: column; /* Columnas se apilan en una sola columna */
+    }
+
+    .mapa, .temas-destacados {
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .temas-destacados {
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 10px;
+
+    }
+
+
+
+    .p, .imagen {
+        width: 100%; /* Ocupan el ancho completo */
+    }
+	
+	#mapa_cuerpo {
+		margin-left: -190px;
+	}
+}
+
+/* Tablets (ancho entre 481px y 1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+
+    img[alt=""] {
+        float: right;
+        margin-right: 30px;
+        max-width: 50%;
+    }
+    
+    #menuhorizontal li {
+        float: left; /* Mantener horizontal, pero ajustar tamaño */
+		
+    }
+
+    .columnas {
+        flex-direction: row; /* Mantener columnas en tablets */
+        flex-wrap: wrap; /* Permitir que las columnas se envuelvan si no caben */
+    }
+
+    .mapa, .temas-destacados {
+        margin: 0;
+        padding: 20px;
+    }
+	
+
+    .temas-destacados {
+        margin-left: 0;
+		
+    }
+
+    .p, .imagen {
+        width: 80%; /* Ancho ajustado */
+    }
+}
+
+
+
+
+/* Pantallas grandes (ancho mayor a 1024px) */
+@media only screen and (min-width: 1025px) {
+
+    img[alt=""] {
+        float: right;
+        margin-right: 150px;
+        max-width: 50%;
+    }
+    
+    #menuhorizontal li {
+        float: left;
+    }
+
+    .columnas {
+        flex-direction: row;
+        
+    }
+
+    .mapa, .temas-destacados {
+        margin-right: 50px;
+    }
+
+    .temas-destacados {
+        margin-left: 320px;
+        
+    }
+
+    .p, .imagen {
+        width: 400px; /* Tamaño original */
+        
+    }
+}
+
+
+

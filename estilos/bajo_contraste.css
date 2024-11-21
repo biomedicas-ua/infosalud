@@ -1,0 +1,50 @@
+@import url("estilo_predeterminado.css");
+@import url("estilo_index.css");
+@import url("estilo_letras.css");
+@import url("estilo_articuloss.css");
+@import url("estilo_form.css");
+
+
+:root {
+    --color_header: #4A4A4A; /* Blanco para el texto del encabezado */
+    --fondo_header: #D0D0D0; /* Un negro ligeramente más claro para el encabezado */
+    --borde_top: #333333; /* Gris oscuro para el borde */
+    --footer_h4: #5A5A5A; /* Blanco para los títulos del pie de página */
+    --footer_ol: #5A5A5A; /* Gris claro para las listas ordenadas */
+    --footer_address: #6E8EAF; /* Azul claro para las direcciones en el pie de página */
+  }
+
+  body {
+    background-color: #E0E0E0 ;
+    color:#5A5A5A;
+
+}
+
+
+
+a {
+  color: #6E8EAF;
+}
+
+:root {
+  --color_menu: white;
+  --fondo_menu: #B8B8B8;
+  --fondo_hover: #ABABAB;
+}
+
+:root {
+  --color_h3: #507575;
+}
+iframe {
+  filter: contrast(0.7); /* Reduce el contraste del iframe al 70% */
+}
+
+:root {
+  --color_bordeform:#719d9d;
+  --color_bordef:#ccc;
+  --fondo_field: #f9f9f9;
+  --fondo_input: #9fa8a8;
+  --color_input: white;
+  --fondo_boton: #4d6161;
+
+}

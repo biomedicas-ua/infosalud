@@ -1,0 +1,32 @@
+
+@import url("estilo_predeterminado.css");
+@import url("estilo_index.css");
+@import url("estilo_letras.css");
+@import url("estilo_articuloss.css");
+@import url("estilo_form.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+/* Fuente adecuada para dislexia */
+body {
+font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Aumentar el espaciado entre letras y palabras */
+p, li {
+  letter-spacing: 0.05em; /* Espaciado entre letras */
+  word-spacing: 0.1em; /* Espaciado entre palabras */
+  max-width: 600px; /* Limitar el ancho de línea para facilitar la lectura */
+  margin-bottom: 1.5em;
+}
+
+
+/* Subrayado claro y visible para los enlaces */
+a {
+  text-decoration: underline;
+  color: #003366;
+}
